@@ -77,7 +77,7 @@ template.add_resource(Pipeline(
             Name="Source",
             Actions=[
                 Actions(
-                    Name="Soruce",
+                    Name="Source",
                     ActionTypeId=ActionTypeId(
                         Category="Source",
                         Owner="ThirdParty",
