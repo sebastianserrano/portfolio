@@ -1,0 +1,2 @@
+1. Create IAM service role for CodeDeploy
+2. Attach role AWS code deploy policy to service role
