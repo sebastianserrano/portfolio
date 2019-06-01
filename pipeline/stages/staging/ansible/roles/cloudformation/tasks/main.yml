@@ -1,0 +1,11 @@
+---
+# tasks file for cloudformation
+#
+- name: Create staging server via cloudformation
+  shell: aws cloudformation create-stack \
+	--capabilities $capability \
+	--stack-name $name \
+	--template-body file://$file \
+	--parameters ParameterKey=$key,ParameterValue=$value
+  args:
+    executable: /bin/bash
