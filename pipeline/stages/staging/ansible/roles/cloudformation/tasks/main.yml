@@ -2,10 +2,12 @@
 # tasks file for cloudformation
 #
 - name: Create staging server via cloudformation
-  shell: aws cloudformation create-stack \
-	--capabilities $capability \
-	--stack-name $name \
-	--template-body file://$file \
-	--parameters ParameterKey=$key,ParameterValue=$value
+  shell: |
+    aws cloudformation create-stack --capabilities CAPABILITY_IAM --stack-name staging-server-portfolio --template-body file://staging-server.template --parameters ParameterKey=KeyPair,ParameterValue=portfolio
   args:
     executable: /bin/bash
+    chdir: roles/cloudformation/files/
+
+- name: Wait for staging server creation
+  shell: |
+    aws cloudformation wait stack-create-complete --stack-name staging-server-portfolio
