@@ -17,3 +17,24 @@
     aws cloudformation wait 
     stack-create-complete 
     --stack-name staging-server-portfolio
+
+- name: Query staging server public ip
+  shell: >-
+    aws cloudformation describe-stacks 
+    --stack-name staging-server-portfolio
+    --query "Stacks[0].Outputs[0].OutputValue"
+  register: staging_server
+
+- name: Strip leading and trailing double quotes 
+  shell: sed -e 's/^"//' -e 's/"$//'
+  args:
+    stdin: "{{ staging_server.stdout }}"
+  register: staging_server_public_ip
+
+- debug:
+    msg: "This is my staging server public ip {{ staging_server_public_ip.stdout }}"
+
+- name: Save staging host ip in dynamic inventory
+  add_host:
+    name: "{{ staging_server_public_ip.stdout }}"
+    groups: staging
