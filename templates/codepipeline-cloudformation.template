@@ -1,0 +1,111 @@
+{
+    "Description": "Portfolio pipeline template",
+    "Resources": {
+        "PortfolioPipeline": {
+            "Properties": {
+                "ArtifactStore": {
+                    "Location": {
+                        "Ref": "S3Bucket"
+                    },
+                    "Type": "S3"
+                },
+                "RoleArn": {
+                    "Fn::GetAtt": [
+                        "PortfolioPipelineRole",
+                        "Arn"
+                    ]
+                },
+                "Stages": [
+                    {
+                        "Actions": [
+                            {
+                                "ActionTypeId": {
+                                    "Category": "Source",
+                                    "Owner": "ThirdParty",
+                                    "Provider": "Github",
+                                    "Version": "1"
+                                },
+                                "Configuration": {
+                                    "Branch": "ToBeConfiguredLater",
+                                    "OAuthToken": "ToBeConfiguredLater",
+                                    "Owner": "ToBeConfiguredLater",
+                                    "Repo": "ToBeConfiguredLater"
+                                },
+                                "Name": "Soruce",
+                                "OutputArtifacts": [
+                                    {
+                                        "Name": "Portfolio"
+                                    }
+                                ]
+                            }
+                        ],
+                        "Name": "Source"
+                    }
+                ]
+            },
+            "Type": "AWS::CodePipeline::Pipeline"
+        },
+        "PortfolioPipelineRole": {
+            "Properties": {
+                "AssumeRolePolicyDocument": {
+                    "Statement": [
+                        {
+                            "Action": [
+                                "sts:AssumeRole"
+                            ],
+                            "Effect": "Allow",
+                            "Principal": {
+                                "Service": [
+                                    "codepipeline.amazonaws.com"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Policies": [
+                    {
+                        "PolicyDocument": {
+                            "Statement": [
+                                {
+                                    "Action": "cloudformation:*",
+                                    "Effect": "Allow",
+                                    "Resource": "*"
+                                },
+                                {
+                                    "Action": "codedeploy:*",
+                                    "Effect": "Allow",
+                                    "Resource": "*"
+                                },
+                                {
+                                    "Action": "codepipeline:*",
+                                    "Effect": "Allow",
+                                    "Resource": "*"
+                                },
+                                {
+                                    "Action": "iam:*",
+                                    "Effect": "Allow",
+                                    "Resource": "*"
+                                },
+                                {
+                                    "Action": "s3:*",
+                                    "Effect": "Allow",
+                                    "Resource": "*"
+                                }
+                            ]
+                        },
+                        "PolicyName": "PortfolioCodePipeline"
+                    }
+                ]
+            },
+            "Type": "AWS::IAM::Role"
+        },
+        "S3Bucket": {
+            "Properties": {
+                "VersioningConfiguration": {
+                    "Status": "Enabled"
+                }
+            },
+            "Type": "AWS::S3::Bucket"
+        }
+    }
+}
