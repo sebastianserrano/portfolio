@@ -58,12 +58,6 @@ template.add_resource(ec2.SecurityGroup(
     ],
 ))
 
-ud = Base64(Join('\n', [ "#!/bin/bash",
-"yum install -y git", 
-"amazon-linux-extras install ansible2",
-AnsiblePullCmd
-]))
-
 template.add_resource(Role(
     "Role",
     AssumeRolePolicyDocument=Policy(
@@ -89,7 +83,6 @@ template.add_resource(ec2.Instance(
     InstanceType="t2.micro",
     SecurityGroups=[Ref("SecurityGroup")],
     KeyName=Ref("KeyPair"),
-    UserData=ud,
     IamInstanceProfile=Ref("InstanceProfile"),
 ))
 
