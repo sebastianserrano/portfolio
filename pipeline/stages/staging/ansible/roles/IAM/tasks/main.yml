@@ -5,9 +5,9 @@
   shell: >-
     aws iam create-role 
     --role-name PortfolioCodeDeployServiceRole 
-    --assume-role-policy-document 
-    https://raw.githubusercontent.com/sebastianserrano/portfolio/aws-pipeline/aws/IAM/code-deploy-service-role.json
+    --assume-role-policy-document file://code-deploy-service-role.json
   args:
+    chdir: roles/IAM/files
     executable: /bin/bash
 
 - name: Attach role policy to Code Deploy service role
