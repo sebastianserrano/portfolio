@@ -26,21 +26,20 @@ from awacs.aws import (
 
 from awacs.sts import AssumeRole
 
-ApplicationName = "jenkins"
 ApplicationPort = "8080"
 
-t = Template()
+template = Template()
 
-t.add_description("Effective DevOps in AWS: HelloWorld web application")
+template.add_description("Testing ec2 server | Portfolio Pipeline")
 
-t.add_parameter(Parameter(
+template.add_parameter(Parameter(
     "KeyPair",
     Description="Name of an existing EC2 KeyPair to SSH",
     Type="AWS::EC2::KeyPair::KeyName",
     ConstraintDescription="must be the name of an existing EC2 KeyPair.",
 ))
 
-t.add_resource(ec2.SecurityGroup(
+template.add_resource(ec2.SecurityGroup(
     "SecurityGroup",
     GroupDescription="Allow SSH and TCP/{} access".format(ApplicationPort),
     SecurityGroupIngress=[
@@ -59,7 +58,7 @@ t.add_resource(ec2.SecurityGroup(
     ],
 ))
 
-t.add_resource(Role(
+template.add_resource(Role(
     "Role",
     AssumeRolePolicyDocument=Policy(
         Statement=[
@@ -72,7 +71,7 @@ t.add_resource(Role(
     )
 ))
 
-t.add_resource(IAMPolicy(
+template.add_resource(IAMPolicy(
     "Policy",
     PolicyName="AllowS3",
     PolicyDocument=Policy(
@@ -86,13 +85,13 @@ t.add_resource(IAMPolicy(
         Roles=[Ref("Role")]
     ))
 
-t.add_resource(InstanceProfile(
+template.add_resource(InstanceProfile(
     "InstanceProfile",
     Path="/",
     Roles=[Ref("Role")]
 ))
 
-t.add_resource(ec2.Instance(
+template.add_resource(ec2.Instance(
     "instance",
     ImageId="ami-0ebbf2179e615c338",
     InstanceType="t2.micro",
@@ -101,13 +100,13 @@ t.add_resource(ec2.Instance(
     IamInstanceProfile=Ref("InstanceProfile"),
 ))
 
-t.add_output(Output(
+template.add_output(Output(
     "InstancePublicIp",
     Description="Public IP of our instance.",
     Value=GetAtt("instance", "PublicIp"),
 ))
 
-t.add_output(Output(
+template.add_output(Output(
     "WebUrl",
     Description="Application endpoint",
     Value=Join("", [
@@ -116,4 +115,4 @@ t.add_output(Output(
     ]),
 ))
 
-print t.to_json()
+print template.to_json()
