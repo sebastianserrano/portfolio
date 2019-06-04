@@ -22,7 +22,7 @@
                                 "ActionTypeId": {
                                     "Category": "Source",
                                     "Owner": "ThirdParty",
-                                    "Provider": "Github",
+                                    "Provider": "GitHub",
                                     "Version": "1"
                                 },
                                 "Configuration": {
@@ -31,7 +31,7 @@
                                     "Owner": "ToBeConfiguredLater",
                                     "Repo": "ToBeConfiguredLater"
                                 },
-                                "Name": "Soruce",
+                                "Name": "Source",
                                 "OutputArtifacts": [
                                     {
                                         "Name": "Portfolio"
@@ -40,6 +40,68 @@
                             }
                         ],
                         "Name": "Source"
+                    },
+                    {
+                        "Actions": [
+                            {
+                                "ActionTypeId": {
+                                    "Category": "Deploy",
+                                    "Owner": "AWS",
+                                    "Provider": "CodeDeploy",
+                                    "Version": "1"
+                                },
+                                "Configuration": {
+                                    "ApplicationName": "portfolio",
+                                    "DeploymentGroupName": "staging-portfolio"
+                                },
+                                "InputArtifacts": [
+                                    {
+                                        "Name": "Portfolio"
+                                    }
+                                ],
+                                "Name": "Deploy"
+                            }
+                        ],
+                        "Name": "Staging"
+                    },
+                    {
+                        "Actions": [
+                            {
+                                "ActionTypeId": {
+                                    "Category": "Approval",
+                                    "Owner": "AWS",
+                                    "Provider": "Manual",
+                                    "Version": "1"
+                                },
+                                "Configuration": {},
+                                "InputArtifacts": [],
+                                "Name": "Approval"
+                            }
+                        ],
+                        "Name": "Approval"
+                    },
+                    {
+                        "Actions": [
+                            {
+                                "ActionTypeId": {
+                                    "Category": "Deploy",
+                                    "Owner": "AWS",
+                                    "Provider": "CodeDeploy",
+                                    "Version": "1"
+                                },
+                                "Configuration": {
+                                    "ApplicationName": "portfolio",
+                                    "DeploymentGroupName": "production-portfolio"
+                                },
+                                "InputArtifacts": [
+                                    {
+                                        "Name": "Portfolio"
+                                    }
+                                ],
+                                "Name": "Deploy"
+                            }
+                        ],
+                        "Name": "Production"
                     }
                 ]
             },

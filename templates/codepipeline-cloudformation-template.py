@@ -1,4 +1,4 @@
-""" Generate CodePipeline throught Cloudformation template """
+""" Generate CodePipeline through Cloudformation template """
 
 from awacs.aws import (
     Allow,
@@ -82,7 +82,7 @@ template.add_resource(Pipeline(
                         Category="Source",
                         Owner="ThirdParty",
                         Version="1",
-                        Provider="Github"
+                        Provider="GitHub"
                     ),
                     Configuration={
                         "Owner": "ToBeConfiguredLater",
@@ -110,23 +110,56 @@ template.add_resource(Pipeline(
                         Provider="CodeDeploy"
                     ),
                     Configuration={
-                        "StackName": "stagingserver-portfoliopipeline",
-                        "ApplicationName": {"Ref": "ApplicationName"},
-                        "DeploymentGroupName": {"Ref": "DeploymentGroupName"}
+                        "ApplicationName": "portfolio",
+                        "DeploymentGroupName": "staging-portfolio"
                     },
                     InputArtifacts=[
                         InputArtifacts(
                             Name="Portfolio",
                         ),
-                    ],
-                    OutputArtifacts=[
-                        OutputArtifacts(
-                            Name="StagingPortfolio"
-                        )    
                     ]
                 )
             ]
-),
+        ),
+       Stages(
+            Name="Approval",
+            Actions=[
+                Actions(
+                    Name="Approval",
+                    ActionTypeId=ActionTypeId(
+                        Category="Approval",
+                        Owner="AWS",
+                        Version="1",
+                        Provider="Manual"
+                    ),
+                    Configuration={},
+                    InputArtifacts=[],
+                )
+            ]
+        ),
+        Stages(
+            Name="Production",
+            Actions=[
+                Actions(
+                    Name="Deploy",
+                    ActionTypeId=ActionTypeId(
+                        Category="Deploy",
+                        Owner="AWS",
+                        Version="1",
+                        Provider="CodeDeploy"
+                    ),
+                    Configuration={
+                        "ApplicationName": "portfolio",
+                        "DeploymentGroupName": "production-portfolio"
+                    },
+                    InputArtifacts=[
+                        InputArtifacts(
+                            Name="Portfolio",
+                        ),
+                    ]
+                )
+            ]
+        ),
     ]
 ))
 
