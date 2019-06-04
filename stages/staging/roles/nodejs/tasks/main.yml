@@ -15,5 +15,4 @@
 - name: Installing node
   yum:
     name: 'nodejs'
-    retries: 3
     state: present
