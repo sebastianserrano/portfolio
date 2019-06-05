@@ -45,6 +45,29 @@
                         "Actions": [
                             {
                                 "ActionTypeId": {
+                                    "Category": "Test",
+                                    "Owner": "Custom",
+                                    "Provider": "Jenkins-Portfolio",
+                                    "Version": "1"
+                                },
+                                "Configuration": {
+                                    "ProjectName": "Portfolio"
+                                },
+                                "InputArtifacts": [
+                                    {
+                                        "Name": "Portfolio"
+                                    }
+                                ],
+                                "Name": "Test",
+                                "Region": "us-east-2"
+                            }
+                        ],
+                        "Name": "Test"
+                    },
+                    {
+                        "Actions": [
+                            {
+                                "ActionTypeId": {
                                     "Category": "Deploy",
                                     "Owner": "AWS",
                                     "Provider": "CodeDeploy",

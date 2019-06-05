@@ -103,13 +103,15 @@ template.add_resource(Pipeline(
             Actions=[
                 Actions(
                     Name="Test",
+                    Region="us-east-2",
                     ActionTypeId=ActionTypeId(
                         Category="Test",
-                        Owner="AWS",
+                        Owner="Custom",
                         Version="1",
-                        Provider="CodeDeploy"
+                        Provider="Jenkins-Portfolio"
                     ),
                     Configuration={
+                        "ProjectName":"Portfolio"
                     },
                     InputArtifacts=[
                         InputArtifacts(
@@ -183,3 +185,5 @@ template.add_resource(Pipeline(
         ),
     ]
 ))
+
+print(template.to_json())
