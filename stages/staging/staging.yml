@@ -3,10 +3,11 @@
   gather_facts: False
   roles:
     - cloudformation
+    - codedeploy-application
 
 - hosts: staging
   become: yes
   gather_facts: False
   roles:
     - nodejs
-    - codedeploy
+    - codedeploy-agent
