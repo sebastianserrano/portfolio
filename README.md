@@ -1,2 +1,0 @@
-# portfolio
-Collection of projects
