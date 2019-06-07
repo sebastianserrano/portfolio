@@ -5,9 +5,11 @@ import Header from './Header';
 
 afterEach(cleanup);
 
-it('Should render header with text Sebastian Serrano', () => {
-  const { getByText } = render(<Header text="Sebastian Serrano" />);
+describe('Header', () => {
+  it('Should render with text Sebastian Serrano', () => {
+    const { getByText } = render(<Header text="Sebastian Serrano" />);
 
-  const header = getByText('Sebastian Serrano');
-  expect(header).toHaveTextContent('Sebastian Serrano');
+    const header = getByText('Sebastian Serrano');
+    expect(header).toHaveTextContent('Sebastian Serrano');
+  });
 });
