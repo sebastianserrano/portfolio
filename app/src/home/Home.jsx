@@ -4,7 +4,7 @@ import Header from './header/Header';
 function Home() {
   return (
     <div>
-      <Header />
+      <Header text="Sebastian Serrano"/>
     </div>
   );
 }
