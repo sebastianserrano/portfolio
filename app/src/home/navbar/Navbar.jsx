@@ -1,9 +1,31 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import NavbarItem from './navbarItem/NavbarItem';
+import CreateNavbarItems from './navbarItem/navbarItemsFactory/CreateNavbarItems';
 
-function Navbar(props) {
-  const { navItems } = props;
+function Navbar() {
+  const items = [{
+    text: 'Projects',
+    link: '#projects',
+    target: '',
+  },
+  {
+    text: 'Resume',
+    link: 'https://resume.com',
+    target: '_blank',
+  },
+  {
+    text: 'Github',
+    link: 'https://github.com/sebastianserrano',
+    target: '_blank',
+  },
+  {
+    text: 'Contact',
+    link: '#contact',
+    target: '',
+  },
+  ];
+
+  const navItems = CreateNavbarItems(items);
+
   return (
     <div className="container-fluid">
       <ul className="nav justify-content-center">
@@ -12,13 +34,5 @@ function Navbar(props) {
     </div>
   );
 }
-
-Navbar.propTypes = {
-  navItems: PropTypes.arrayOf(PropTypes.instanceOf(NavbarItem)),
-};
-
-Navbar.defaultProps = {
-  navItems: [],
-};
 
 export default Navbar;
