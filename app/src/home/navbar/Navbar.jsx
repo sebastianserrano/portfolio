@@ -28,7 +28,7 @@ function Navbar() {
 
   return (
     <div className="container-fluid">
-      <ul className="nav justify-content-center">
+      <ul className="row nav justify-content-center">
         {navItems}
       </ul>
     </div>
