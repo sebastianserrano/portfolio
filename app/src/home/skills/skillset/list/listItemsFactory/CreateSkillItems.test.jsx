@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSquare } from '@fortawesome/free-solid-svg-icons';
 import CreateSkillItems from './CreateSkillItems';
 
 describe('Skill Items Factory', () => {
@@ -7,10 +9,12 @@ describe('Skill Items Factory', () => {
     const skills = CreateSkillItems(items);
 
     expect([
-      <li className="skill-item" key="Example 1">
+      <li className="skill-item list-inline-item" key="Example 1">
+        <FontAwesomeIcon icon={faSquare} />
         Example 1
       </li>,
-      <li className="skill-item" key="Example 2">
+      <li className="skill-item list-inline-item" key="Example 2">
+        <FontAwesomeIcon icon={faSquare} />
         Example 2
       </li>,
     ]).toEqual(expect.arrayContaining(skills));
