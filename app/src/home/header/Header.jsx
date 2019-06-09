@@ -6,7 +6,9 @@ function Header(props) {
   return (
     <div className="container-fluid">
       <div className="row justify-content-center">
-        <header>{text}</header>
+        <header>
+          <h3>{text}</h3>
+        </header>
       </div>
     </div>
   );
