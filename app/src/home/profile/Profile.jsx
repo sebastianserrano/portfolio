@@ -4,7 +4,7 @@ import Description from './description/Description';
 
 function Profile() {
   return (
-    <div className="container-fluid section">
+    <section className="container-fluid section">
       <div className="row justify-content-center">
         <div id="profile">
           <Title text="Fullstack Web Developer" />
@@ -15,7 +15,7 @@ function Profile() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
