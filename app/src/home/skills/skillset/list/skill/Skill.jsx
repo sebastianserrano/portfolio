@@ -14,11 +14,7 @@ function Skill(props) {
 }
 
 Skill.propTypes = {
-  text: PropTypes.string,
-};
-
-Skill.defaultProps = {
-  text: 'Skill',
+  text: PropTypes.string.isRequired,
 };
 
 export default Skill;

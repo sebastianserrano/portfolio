@@ -4,7 +4,7 @@ import Skillset from './skillset/Skillset';
 
 function Skills() {
   return (
-    <div className="container-fluid section">
+    <section className="container-fluid section">
       <div className="row justify-content-center">
         <div id="skills">
           <Title text="Skills" />
@@ -17,7 +17,7 @@ function Skills() {
           <Skillset topic="Tools" skills={['Stripe', 'Twilio', 'ElasticSearch', 'Git/Github', 'Docker', 'Ansible']} />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

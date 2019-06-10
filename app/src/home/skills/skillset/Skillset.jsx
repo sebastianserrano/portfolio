@@ -7,7 +7,7 @@ function Skillset(props) {
   const { topic, skills } = props;
   return (
     <div className="row skillset">
-      <div className="container">
+      <div className="container-fluid">
         <Topic text={topic} />
         <List list={skills} />
       </div>

@@ -11,15 +11,9 @@ function NavbarItem(props) {
 }
 
 NavbarItem.propTypes = {
-  text: PropTypes.string,
-  link: PropTypes.string,
-  target: PropTypes.string,
-};
-
-NavbarItem.defaultProps = {
-  text: '',
-  link: '',
-  target: '',
+  text: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  target: PropTypes.string.isRequired,
 };
 
 export default NavbarItem;
