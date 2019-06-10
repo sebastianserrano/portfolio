@@ -4,6 +4,7 @@ import Navbar from './navbar/Navbar';
 import Profile from './profile/Profile';
 import Skills from './skills/Skills';
 import Projects from './projects/Projects';
+import Footer from './footer/Footer';
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <Profile />
       <Skills />
       <Projects />
+      <Footer />
     </div>
   );
 }
