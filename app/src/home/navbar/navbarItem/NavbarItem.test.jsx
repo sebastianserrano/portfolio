@@ -8,7 +8,9 @@ afterEach(cleanup);
 describe('NavbarItem', () => {
   it('Should render with text', () => {
     const sampleText = 'Link';
-    const { getByText } = render(<NavbarItem text={sampleText} />);
+    const sampleHref = 'https://example.com';
+    const sampleTarget = '_blank';
+    const { getByText } = render(<NavbarItem text={sampleText} link={sampleHref} target={sampleTarget} />);
 
     const navbar = getByText(sampleText);
     expect(navbar).toHaveTextContent(sampleText);

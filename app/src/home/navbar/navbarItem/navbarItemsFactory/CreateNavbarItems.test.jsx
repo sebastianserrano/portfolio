@@ -1,4 +1,5 @@
 import React from 'react';
+import NavbarItem from '../NavbarItem';
 import CreateNavbarItems from './CreateNavbarItems';
 
 describe('Navbar Items Factory', () => {
@@ -17,16 +18,8 @@ describe('Navbar Items Factory', () => {
     const navbarItems = CreateNavbarItems(items);
 
     expect([
-      <li className="nav-item" key="Projects">
-        <a className="nav-link" href="#projects" target="" rel="noopener noreferrer">
-          Projects
-        </a>
-      </li>,
-      <li className="nav-item" key="Resume">
-        <a className="nav-link" href="https://resume.com" target="_blank" rel="noopener noreferrer">
-          Resume
-        </a>
-      </li>,
+      <NavbarItem link="#projects" target="" text="Projects" key="Projects" />,
+      <NavbarItem link="https://resume.com" target="_blank" text="Resume" key="Resume" />,
     ]).toEqual(expect.arrayContaining(navbarItems));
   });
 });
