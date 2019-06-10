@@ -1,5 +1,5 @@
 import React from 'react';
-import Project from '../project/Project';
+import Project from '../Project';
 
 function createProjects(projects) {
   return projects.projects.map((project) => {

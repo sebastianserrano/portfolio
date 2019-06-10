@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from '../components/title/Title';
-import CreateProjects from './projectFactory/CreateProjects';
+import CreateProjects from './project/projectFactory/CreateProjects';
 import projectsJson from './projects.json';
 
 function Projects() {
