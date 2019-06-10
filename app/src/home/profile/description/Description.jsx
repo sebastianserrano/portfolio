@@ -11,11 +11,7 @@ function Description(props) {
 }
 
 Description.propTypes = {
-  text: PropTypes.string,
-};
-
-Description.defaultProps = {
-  text: 'Description',
+  text: PropTypes.string.isRequired,
 };
 
 export default Description;
