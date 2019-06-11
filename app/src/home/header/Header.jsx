@@ -4,10 +4,11 @@ import PropTypes from 'prop-types';
 function Header(props) {
   const { text } = props;
   return (
-    <div className="container-fluid">
+    <div className="container-fluid" id="header">
       <div className="row justify-content-center">
         <header>
           <h3>{text}</h3>
+          <hr />
         </header>
       </div>
     </div>

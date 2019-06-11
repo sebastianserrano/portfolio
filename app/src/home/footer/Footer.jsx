@@ -14,7 +14,7 @@ function Profile() {
           <Email text="sebastianjuan1994@gmail.com" />
         </div>
         <div className="col">
-          <Github text="https://github.com/sebastianserrano" />
+          <Github text="Sebastian Serrano" />
         </div>
       </div>
     </footer>
