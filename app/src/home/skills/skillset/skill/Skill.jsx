@@ -6,10 +6,10 @@ import { faSquare } from '@fortawesome/free-solid-svg-icons';
 function Skill(props) {
   const { text } = props;
   return (
-    <li className="skill-item list-inline-item" key={text}>
+    <div className="skill-item col-lg-3 col-sm-3 col-6" key={text}>
       <FontAwesomeIcon icon={faSquare} />
-      {text}
-    </li>
+      <p>{text}</p>
+    </div>
   );
 }
 
