@@ -4,14 +4,12 @@ import PropTypes from 'prop-types';
 function Description(props) {
   const { text } = props;
   return (
-    <div className="row justify-content-center">
-      <h6 className="col-lg-7 col-sm-7 col-md-7 col-9 text-center">{text}</h6>
-    </div>
+    <p className="card-text">{text}</p>
   );
 }
 
 Description.propTypes = {
-  text: PropTypes.string.isRequired,
+  text: PropTypes.any.isRequired,
 };
 
 export default Description;

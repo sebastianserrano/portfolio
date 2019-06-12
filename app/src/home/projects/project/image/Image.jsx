@@ -5,9 +5,11 @@ function Image(props) {
   const { imageInfo } = props;
   const { name, alt, link } = imageInfo;
   return (
-    <div className="col">
+    <div className="col-lg-5 col-md-5 col-sm-6 col-12">
       <a href={link}>
-        <img className="project-image" src={name} alt={alt} />
+        <div className="thumbnail-project-image">
+          <img className="project-image" src={name} alt={alt} />
+        </div>
       </a>
     </div>
   );

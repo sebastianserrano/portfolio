@@ -6,10 +6,10 @@ import { faSquare } from '@fortawesome/free-solid-svg-icons';
 function Tool(props) {
   const { text } = props;
   return (
-    <li className="tool-item list-inline-item" key={text}>
+    <div className="tool-item col-lg-4 col-md-6 col-sm-6 col-12" key={text}>
       <FontAwesomeIcon icon={faSquare} />
       {text}
-    </li>
+    </div>
   );
 }
 

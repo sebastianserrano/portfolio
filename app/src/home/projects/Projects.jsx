@@ -6,13 +6,10 @@ import projectsJson from './projects.json';
 function Projects() {
   const projects = CreateProjects(projectsJson);
   return (
-    <section className="container-fluid section">
-      <div className="row justify-content-center">
-        <div id="projects">
-          <Title text="Projects" />
-          {projects}
-        </div>
-      </div>
+    <section className="container-fluid section" id="projects">
+      <Title text="Projects" />
+      <hr />
+      {projects}
     </section>
   );
 }

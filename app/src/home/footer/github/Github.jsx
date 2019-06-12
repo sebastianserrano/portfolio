@@ -6,9 +6,9 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 function Github(props) {
   const { text } = props;
   return (
-    <a className="text-center" href="https://github.com/sebastianserrano">
+    <a className="nav-link text-center" href="https://github.com/sebastianserrano">
       <FontAwesomeIcon icon={faGithub} />
-      {text}
+      <p>{text}</p>
     </a>
   );
 }

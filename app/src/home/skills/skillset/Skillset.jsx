@@ -1,15 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Topic from './topic/Topic';
-import List from './list/List';
+import CreateSkillItems from './skill/skillsFactory/CreateSkillItems';
 
 function Skillset(props) {
   const { topic, skills } = props;
+  const skillList = CreateSkillItems(skills);
   return (
-    <div className="row skillset">
-      <div className="container-fluid">
+    <div className="container-fluid skillset">
+      <div className="row">
         <Topic text={topic} />
-        <List list={skills} />
+      </div>
+      <div className="row">
+        {skillList}
       </div>
     </div>
   );

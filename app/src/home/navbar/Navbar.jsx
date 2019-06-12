@@ -27,7 +27,7 @@ function Navbar() {
   const navItems = CreateNavbarItems(items);
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid" id="navbar">
       <ul className="row nav justify-content-center">
         {navItems}
       </ul>
