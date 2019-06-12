@@ -6,9 +6,9 @@ import { faAt } from '@fortawesome/free-solid-svg-icons';
 function Email(props) {
   const { text } = props;
   return (
-    <a className="text-center" href="mailto:${text}">
+    <a className="nav-link text-center" href="mailto:${text}">
       <FontAwesomeIcon icon={faAt} />
-      {text}
+      <p>{text}</p>
     </a>
   );
 }
