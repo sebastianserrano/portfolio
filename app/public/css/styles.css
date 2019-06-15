@@ -4,6 +4,9 @@ body {
   color: black;
 }
 
+p {
+  white-space: pre-line;
+}
 
 a:hover {
   font-size: 1.00rem;
@@ -115,33 +118,6 @@ h4 {
   border-radius: 5px;
 }
 
-@media (max-width: 575.98px) { 
-  .project-image {
-    margin-top: 50px;
-    margin-bottom: 30px;
-  }
-}
-
-@media (max-width: 767.98px) { 
-  .project-image {
-    margin-top: 50px;
-    margin-bottom: 30px;
-  }
-}
-
-@media (max-width: 991.98px) { 
-  .project-image {
-    margin-top: 50px;
-    margin-bottom: 30px;
-  }
-}
-
-@media (max-width: 1199.98px) { 
-  .project-image {
-    margin-top: 50px;
-    margin-bottom: 30px;
-  }
-}
 
 
 .thumbnail-project-image {
@@ -175,9 +151,9 @@ h4 {
   background: linear-gradient(0deg, rgba(31,32,33,1) 43%, rgba(109,173,237,1) 100%); 
 }
 
-#red-background-project {
-  color: white;
-  background: linear-gradient(0deg, rgba(103,21,5,1) 43%, rgba(109,173,237,1) 100%); 
+#red-background-project a {
+  color: black;
+  background: white;
 }
 
 #purple-background-project {
@@ -194,4 +170,38 @@ h4 {
 #footer .svg-inline--fa {
  margin-right: 10px;
  color: #00b9ff;
+}
+
+@media (max-width: 575.98px) { 
+  .project-image {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767.98px) { 
+  .project-image {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 575.98px) and (max-width: 767.98px) { 
+  .project-description {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 991.98px) { 
+  .project-image {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1199.98px) { 
+  .project-image {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
 }
