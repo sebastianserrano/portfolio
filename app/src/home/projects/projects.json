@@ -9,8 +9,8 @@
      "description": {
       "name": "Midhub",
       "link": "https://midhub.co",
-      "descriptionText": "Midhub is an escrow system which empowers both freelancers and clients to make secure but fast transactions by live streaming their work. The idea for this project came from the problems that both parties have to deal with when working remotely when it comes to sending/receiving payments and the transfer of files securely. Checks are put in place so the funds can be released as soon as the client downloads the file uploaded by the freelancer",
-      "tools": ["React JS", "Redux", "Bootstrap", "Twilio", "Stripe", "Plaid", "Node JS", "Postgres SQL", "AWS CodeDeploy", "AWS Pipeline", "Ansible", "Jenkins"],
+      "descriptionText": "Midhub is an escrow system which empowers both freelancers and clients to make secure but fast transactions by live streaming their work. The idea for this project came from the problems that both parties have to deal with while working remotely when it comes to sending/receiving payments and the transfer of files securely. Checks are put in place so the funds can be released as soon as the client downloads the files uploaded by the freelancer",
+      "tools": ["React JS", "Redux", "Bootstrap", "Twilio", "Stripe", "Plaid", "Node JS", "PostgreSQL", "AWS CodeDeploy", "AWS Pipeline", "Ansible", "Jenkins"],
       "background": "blue-background-project"
      }
     },
@@ -23,8 +23,8 @@
      "description": {
       "name": "Midhub Backend",
       "link": "https://github.com/sebastianserrano/midhub_backend",
-      "descriptionText": "Midhub Backend is the server implementation of the original project \"Midhub\" that currently runs on nodejs. The reason for extracting this as separate piece is for demonstrational purposes on the steps that were taken and the reasoning behind these for creating the overall architecture and structure of the server ",
-      "tools": ["Node JS", "Postgres SQL", "Twilio", "Stripe"],
+      "descriptionText": "Midhub Backend is the server implementation of the original project \"Midhub\" that currently runs on nodejs. The reason for extracting this as a separate piece is for demonstrational purposes on the steps that were taken and the reasoning behind these for creating the overall architecture and structure of the server ",
+      "tools": ["Node JS", "PostgreSQL", "Twilio", "Stripe"],
       "background": "lightblue-background-project"
      }
     },
@@ -37,7 +37,7 @@
      "description": {
       "name": "Cohesive",
       "link": "https://github.com/sebastianserrano/cohesive",
-      "descriptionText": "Cohesive is a IOS application written in Swift which brought students together depending on their educational needs. There are many times in which they urgently need each other's skills in order to complete assignments of any kind. By connecting them according to their abilities while these match another students' needs, this pairing was made succesfully. For example, if student A is good with math but needs help with english, and student B is good with english but needs help with math, these two would match",
+      "descriptionText": "Cohesive is a IOS application written in Swift which brought students together depending on their educational needs. There are many times in which they urgently need each other's skills in order to complete assignments of any kind. By connecting them according to their abilities while these matching another student's needs, this pairing was made succesfully. For example, if student A is good with math but needs help with english, and student B is good with english but needs help with math, these two would match",
       "tools": ["Swift", "Objective C", "Firebase", "MongoDB", "ElasticSearch"],
       "background": "red-background-project"
      }
