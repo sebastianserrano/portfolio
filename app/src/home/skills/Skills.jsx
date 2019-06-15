@@ -10,7 +10,7 @@ function Skills() {
           <Title text="Skills" />
           <hr />
           <Skillset topic="Languages" skills={['Javascript', 'Python', 'Swift']} />
-          <Skillset topic="Databases" skills={['Postgresql', 'MongoDB', 'Firebase']} />
+          <Skillset topic="Databases" skills={['PostgreSQL', 'MongoDB', 'Firebase']} />
           <Skillset topic="Frontend" skills={['ReactJS', 'Bootstrap', 'HTML', 'CSS']} />
           <Skillset topic="Backend" skills={['NodeJS', 'REST API']} />
           <Skillset topic="Cloud" skills={['Amazon Web Services']} />
