@@ -51,7 +51,7 @@
      "description": {
       "name": "Portfolio",
       "link": "https://github.com/sebastianserrano/portfolio",
-      "descriptionText": "This is the current project you are interacting with at the moment. I have opened its source code to the public for demonstrational purposes. From the colors to the layout of the website have been seriously taken into account in order to achieve a clean and concise approach to transmiting information about who I am today and who I am planning to be in the future ",
+      "descriptionText": "This is the current project you are interacting with at the moment. I have opened its source code to the public for demonstrational purposes. Everything has been seriously taken into account, from the colors to the layout of the website, in order to achieve a clean and concise approach for transmiting information about who I am today and who I am planning to be in the future ",
       "tools": ["React JS", "Bootstrap", "Flexbox", "AWS CodeDeploy", "AWS Pipeline", "Ansible", "Jenkins"],
       "background": "purple-background-project"
      }

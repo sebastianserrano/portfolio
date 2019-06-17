@@ -6,11 +6,11 @@ function Image(props) {
   const { name, alt, link } = imageInfo;
   return (
     <div className="col-lg-5 col-md-5 col-sm-6 col-12">
-      <a href={link}>
-        <div className="thumbnail-project-image">
+      <div className="thumbnail-project-image">
+        <a href={link}>
           <img className="project-image" src={name} alt={alt} />
-        </div>
-      </a>
+        </a>
+      </div>
     </div>
   );
 }
