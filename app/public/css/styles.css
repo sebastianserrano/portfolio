@@ -141,21 +141,26 @@ h4 {
   color: #717FAB;
 }
 
-#blue-background-project {
+#midhub-background-project {
   background: radial-gradient(circle, rgba(192,196,215,1) 0%, rgba(229,230,231,1) 100%); 
 }
 
-#lightblue-background-project {
+#midhub-backend-background-project {
   color: white;
   background: linear-gradient(0deg, rgba(31,32,33,1) 43%, rgba(109,173,237,1) 100%); 
 }
 
-#red-background-project a {
+#cohesive-background-project a {
   color: black;
   background: white;
 }
 
-#purple-background-project {
+#lambda-background-project {
+  color: white;
+  background: black;
+}
+
+#portfolio-background-project {
   color: white;
   background: linear-gradient(0deg, rgba(66,30,71,1) 11%, rgba(109,173,237,1) 100%); 
 }

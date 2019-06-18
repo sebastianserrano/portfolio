@@ -11,7 +11,7 @@
       "link": "https://midhub.co",
       "descriptionText": "Midhub is an escrow system which empowers both freelancers and clients to make secure but fast transactions by live streaming their work. The idea for this project came from the problems that both parties have to deal with while working remotely when it comes to sending/receiving payments and the transfer of files securely. Checks are put in place so the funds can be released as soon as the client downloads the files uploaded by the freelancer",
       "tools": ["React JS", "Redux", "Bootstrap", "Twilio", "Stripe", "Plaid", "Node JS", "PostgreSQL", "AWS CodeDeploy", "AWS Pipeline", "Ansible", "Jenkins"],
-      "background": "blue-background-project"
+      "background": "midhub-background-project"
      }
     },
     {
@@ -25,7 +25,7 @@
       "link": "https://github.com/sebastianserrano/midhub_backend",
       "descriptionText": "Midhub Backend is the server implementation of the original project \"Midhub\" that currently runs on nodejs. The reason for extracting this as a separate piece is for demonstrational purposes on the steps that were taken and the reasoning behind these for creating the overall architecture and structure of the server ",
       "tools": ["Node JS", "PostgreSQL", "Twilio", "Stripe"],
-      "background": "lightblue-background-project"
+      "background": "midhub-backend-background-project"
      }
     },
     {
@@ -39,7 +39,21 @@
       "link": "https://github.com/sebastianserrano/cohesive",
       "descriptionText": "Cohesive is a IOS application written in Swift which brought students together depending on their educational needs. There are many times in which they urgently need each other's skills in order to complete assignments of any kind. By connecting them according to their abilities while these matching another student's needs, this pairing was made succesfully. For example, if student A is good with math but needs help with english, and student B is good with english but needs help with math, these two would match",
       "tools": ["Swift", "Objective C", "Firebase", "MongoDB", "ElasticSearch"],
-      "background": "red-background-project"
+      "background": "cohesive-background-project"
+     }
+    },
+    {
+     "imageInfo": {
+      "name": "/images/lambda-s3.jpg",
+      "alt": "My Image",
+      "link": "https://github.com/sebastianserrano/lambda-s3"
+     },
+     "description": {
+      "name": "Lambda s3",
+      "link": "https://github.com/sebastianserrano/portfolio",
+      "descriptionText": "Lambda s3 is a set of javascript lambda functions running on a nodejs-10.x environment sitting behind a Websocket AWS API for uploading and downloading files from/to a s3 bucket with the ability of showing progress in real time. This is part one of a two piece project that is under development, with the other matching part being a ReactJS component connected to a websocket in order to show this real time progress capability",
+      "tools": ["AWS Lambda", "AWS Sam", "AWS Websocket API", "Node JS"],
+      "background": "lambda-background-project"
      }
     },
     {
@@ -53,7 +67,7 @@
       "link": "https://github.com/sebastianserrano/portfolio",
       "descriptionText": "This is the current project you are interacting with at the moment. I have opened its source code to the public for demonstrational purposes. Everything has been seriously taken into account, from the colors to the layout of the website, in order to achieve a clean and concise approach for transmiting information about who I am today and who I am planning to be in the future ",
       "tools": ["React JS", "Bootstrap", "Flexbox", "AWS CodeDeploy", "AWS Pipeline", "Ansible", "Jenkins"],
-      "background": "purple-background-project"
+      "background": "portfolio-background-project"
      }
     }
   ]
