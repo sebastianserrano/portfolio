@@ -9,7 +9,7 @@ function Navbar() {
   },
   {
     text: 'Resume',
-    link: 'https://resume.com',
+    link: 'https://drive.google.com/open?id=1j6vPu8r-CjSuJ-pIAoAkHxlnBz0HchqD',
     target: '_blank',
   },
   {
