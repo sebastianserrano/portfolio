@@ -50,7 +50,7 @@
      },
      "description": {
       "name": "Lambda s3",
-      "link": "https://github.com/sebastianserrano/portfolio",
+      "link": "https://github.com/sebastianserrano/lambda-s3",
       "descriptionText": "Lambda s3 is a set of javascript lambda functions running on a nodejs-10.x environment sitting behind a Websocket AWS API for uploading and downloading files from/to a s3 bucket with the ability of showing progress in real time. This is part one of a two piece project that is under development, with the other matching part being a ReactJS component connected to a websocket in order to show this real time progress capability",
       "tools": ["AWS Lambda", "AWS Sam", "AWS Websocket API", "Node JS"],
       "background": "lambda-background-project"

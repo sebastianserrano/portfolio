@@ -9,7 +9,7 @@ function Navbar() {
   },
   {
     text: 'Resume',
-    link: 'https://drive.google.com/open?id=1j6vPu8r-CjSuJ-pIAoAkHxlnBz0HchqD',
+    link: 'https://drive.google.com/file/d/1woAZdVHBT9SXY66xCU9rSgBBGfBgJI4L/view?usp=sharing',
     target: '_blank',
   },
   {
