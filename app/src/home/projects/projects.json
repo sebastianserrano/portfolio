@@ -65,8 +65,8 @@
      "description": {
       "name": "React s3",
       "link": "https://github.com/sebastianserrano/react-s3",
-      "descriptionText": "React s3 is a React JS component with hooks that has the capability of showing real time progress of file uploads to an AWS s3 bucket. The files did not have to be split into multiple parts by this component since this is done behind the scenes by the AWS Javascript SDK. The goal for this project is to be more than just an interface for one AWS operation, but to provide many more capabilities through the use of custom hooks",
-      "tools": ["React JS", "AWS Sam", "AWS Websocket API", "Node JS"],
+      "descriptionText": "React s3 is a React JS component with hooks that has the capability of showing real time progress of file uploads to an AWS s3 bucket. The files did not have to be split into multiple parts by this component since this is done behind the scenes by the AWS Javascript SDK. The goal for this project is to be more than just an interface for one AWS operation, but to provide many more capabilities through the use of custom hooks. This project is currently under development",
+      "tools": ["React JS", "React Hooks", "AWS JS SDK"],
       "background": "react-s3-background-project"
      }
     },
