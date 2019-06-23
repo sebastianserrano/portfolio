@@ -51,9 +51,23 @@
      "description": {
       "name": "Lambda s3",
       "link": "https://github.com/sebastianserrano/lambda-s3",
-      "descriptionText": "Lambda s3 is a set of javascript lambda functions running on a nodejs-10.x environment sitting behind a Websocket AWS API for uploading and downloading files from/to a s3 bucket with the ability of showing progress in real time. This is part one of a two piece project that is under development, with the other matching part being a ReactJS component connected to a websocket in order to show this real time progress capability",
-      "tools": ["AWS Lambda", "AWS Sam", "AWS Websocket API", "Node JS"],
-      "background": "lambda-background-project"
+      "descriptionText": "Lambda s3 is a set of javascript lambda functions running on a nodejs-10.x environment sitting behind an AWS API for uploading files to a s3 bucket. The project was created via sam (Serverless Application Model) giving it the ability to package and deploy as one piece with all of its required resources. With a simple git clone, sam package, and sam deploy commands the lambda function will be up and running in your aws environment",
+      "tools": ["AWS Lambda", "AWS Sam", "AWS API", "Node JS"],
+      "background": "lambda-s3-background-project"
+     }
+    },
+    {
+     "imageInfo": {
+      "name": "/images/react-s3.jpg",
+      "alt": "My Image",
+      "link": "https://github.com/sebastianserrano/react-s3"
+     },
+     "description": {
+      "name": "React s3",
+      "link": "https://github.com/sebastianserrano/react-s3",
+      "descriptionText": "React s3 is a React JS component with hooks that has the capability of showing real time progress of file uploads to an AWS s3 bucket. The files did not have to be split into multiple parts by this component since this is done behind the scenes by the AWS Javascript SDK. The goal for this project is to be more than just an interface for one AWS operation, but to provide many more capabilities through the use of custom hooks",
+      "tools": ["React JS", "AWS Sam", "AWS Websocket API", "Node JS"],
+      "background": "react-s3-background-project"
      }
     },
     {
