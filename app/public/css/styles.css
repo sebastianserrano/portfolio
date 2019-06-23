@@ -155,9 +155,14 @@ h4 {
   background: white;
 }
 
-#lambda-background-project {
+#lambda-s3-background-project {
   color: white;
   background: black;
+}
+
+#react-s3-background-project {
+  color: white;
+  background: linear-gradient(0deg, rgba(118,125,126,1) 40%, rgba(71,112,148,1) 85%); 
 }
 
 #portfolio-background-project {
