@@ -132,12 +132,13 @@ h4 {
   font-size: 1.05em;
 }
 
-.tool-item {
+.tool-text {
+  padding-left: 10px !important;
   margin-bottom: 10px;
 }
 
-.tool-item .fa-square {
-  margin-right: 10px;
+.tool-icon .fa-square {
+  margin-right: 5px;
   color: #717FAB;
 }
 
@@ -153,6 +154,11 @@ h4 {
 #cohesive-background-project a {
   color: black;
   background: white;
+}
+
+#solid-nodejs-background-project {
+  color: black;
+  background: linear-gradient(0deg, rgba(149,176,180,1) 34%, rgba(138,182,221,1) 78%); 
 }
 
 #lambda-s3-background-project {

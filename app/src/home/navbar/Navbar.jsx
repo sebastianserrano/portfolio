@@ -8,13 +8,23 @@ function Navbar() {
     target: '',
   },
   {
-    text: 'Resume',
-    link: 'https://drive.google.com/file/d/1woAZdVHBT9SXY66xCU9rSgBBGfBgJI4L/view?usp=sharing',
+    text: 'Github',
+    link: 'https://github.com/sebastianserrano',
     target: '_blank',
   },
   {
-    text: 'Github',
-    link: 'https://github.com/sebastianserrano',
+    text: 'Docker',
+    link: 'https://hub.docker.com/u/sebastianserrano',
+    target: '_blank',
+  },
+  {
+    text: 'Npm',
+    link: 'https://www.npmjs.com/settings/sebastianserrano/packages',
+    target: '_blank',
+  },
+  {
+    text: 'Resume',
+    link: 'https://drive.google.com/file/d/1woAZdVHBT9SXY66xCU9rSgBBGfBgJI4L/view?usp=sharing',
     target: '_blank',
   },
   {
