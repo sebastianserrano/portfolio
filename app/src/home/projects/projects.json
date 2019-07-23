@@ -10,7 +10,7 @@
       "name": "Midhub",
       "link": "https://midhub.co",
       "descriptionText": "Midhub is an escrow system which empowers both freelancers and clients to make secure but fast transactions by live streaming their work. The idea for this project came from the problems that both parties have to deal with while working remotely when it comes to sending/receiving payments and the transfer of files securely. Checks are put in place so the funds can be released as soon as the client downloads the files uploaded by the freelancer",
-      "tools": ["React JS", "Redux", "Bootstrap", "Twilio", "Stripe", "Plaid", "Node JS", "PostgreSQL", "AWS CodeDeploy", "AWS Pipeline", "Ansible", "Jenkins"],
+      "tools": ["React JS", "Redux", "Bootstrap", "Twilio", "Stripe", "Plaid", "Node JS", "PostgreSQL", "Ansible", "Jenkins", "AWS Pipeline", "AWS CodeDeploy"],
       "background": "midhub-background-project"
      }
     },
@@ -38,8 +38,22 @@
       "name": "Cohesive",
       "link": "https://github.com/sebastianserrano/cohesive",
       "descriptionText": "Cohesive is a IOS application written in Swift which brought students together depending on their educational needs. There are many times in which they urgently need each other's skills in order to complete assignments of any kind. By connecting them according to their abilities while these matching another student's needs, this pairing was made succesfully. For example, if student A is good with math but needs help with english, and student B is good with english but needs help with math, these two would match",
-      "tools": ["Swift", "Objective C", "Firebase", "MongoDB", "ElasticSearch"],
+      "tools": ["Swift", "Firebase", "MongoDB", "ElasticSearch"],
       "background": "cohesive-background-project"
+     }
+    },
+    {
+     "imageInfo": {
+      "name": "/images/solid-nodejs.jpg",
+      "alt": "My Image",
+      "link": "https://github.com/sebastianserrano/solid_node"
+     },
+     "description": {
+      "name": "Solid Node",
+      "link": "https://github.com/sebastianserrano/solid_node",
+      "descriptionText": "Solid node is a server which displays the core design principles of software development. Through research on various books and documentations such as \"Clean Code\" and \"Clean Architecture\" by Robert C. Martin, this knowledge has been available to me and applied to not only this project, but all the other ones as well with different techniques and flavours. Some of these principles can be seen on the description of this project right below",
+      "tools": ["Open-closed principle", "Single responsibility principle", "Interface segregation principle", "Dependency inversion principle", "Node JS"],
+      "background": "solid-nodejs-background-project"
      }
     },
     {
@@ -66,7 +80,7 @@
       "name": "React s3",
       "link": "https://github.com/sebastianserrano/react-s3",
       "descriptionText": "React s3 is a React JS component with hooks that has the capability of showing real time progress of file uploads to an AWS s3 bucket. The files did not have to be split into multiple parts by this component since this is done behind the scenes by the AWS Javascript SDK. The goal for this project is to be more than just an interface for one AWS operation, but to provide many more capabilities through the use of custom hooks. This project is currently under development",
-      "tools": ["React JS", "React Hooks", "AWS JS SDK"],
+      "tools": ["React Hooks", "AWS JS SDK", "React JS"],
       "background": "react-s3-background-project"
      }
     },
@@ -80,7 +94,7 @@
       "name": "Portfolio",
       "link": "https://github.com/sebastianserrano/portfolio",
       "descriptionText": "This is the current project you are interacting with at the moment. I have opened its source code to the public for demonstrational purposes. Everything has been seriously taken into account, from the colors to the layout of the website, in order to achieve a clean and concise approach for transmiting information about who I am today and who I am planning to be in the future ",
-      "tools": ["React JS", "Bootstrap", "Flexbox", "AWS CodeDeploy", "AWS Pipeline", "Ansible", "Jenkins"],
+      "tools": [ "AWS Pipeline", "Ansible", "Jenkins","React JS", "Bootstrap", "Flexbox", "AWS CodeDeploy"],
       "background": "portfolio-background-project"
      }
     }
