@@ -4,11 +4,8 @@ files:
   - source: app/
     destination: /usr/local/portfolio/
 hooks:
-  BeforeInstall:
-    - location: scripts/test.sh
-      timeout: 180
   ApplicationStart:
-    - location: npm start
+    - location: scripts/start.sh
       timeout: 10
   ValidateService:
     - location: scripts/validate.sh
