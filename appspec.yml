@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: app/
-    destination: /usr/local/portfolio/
+    destination: ~/portfolio
 hooks:
   ApplicationStart:
     - location: scripts/start.sh
