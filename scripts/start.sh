@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/portfolio
+cd /home/ec2-user/portfolio
 
 npm install
 npm test
