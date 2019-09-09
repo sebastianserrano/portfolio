@@ -4,10 +4,13 @@ files:
   - source: app/
     destination: /home/ec2-user/portfolio
 hooks:
+  ApplicationStop:
+    - location: scripts/stop.sh
+    - timeout: 60
   ApplicationStart:
     - location: scripts/start.sh
       timeout: 120
   ValidateService:
     - location: scripts/validate.sh
-      timeout: 5
+      timeout: 60
 
