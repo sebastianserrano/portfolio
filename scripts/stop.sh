@@ -1,6 +1,8 @@
 #!/bin/bash
 
-if [ `fuser 3000/tcp` ]
+PROCESS_ID=`sudo netstat -ltnp | grep ':3000' | awk '{print \$NF}' | cut -f1 -d '/'`
+
+if [ -n "$PROCESS_ID" ]
 then
-  fuser -k 3000/tcp
+  sudo kill -9 $PROCESS_ID
 fi
