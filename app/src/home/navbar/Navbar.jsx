@@ -18,11 +18,6 @@ function Navbar() {
     target: '_blank',
   },
   {
-    text: 'Npm',
-    link: 'https://www.npmjs.com/settings/sebastianserrano/packages',
-    target: '_blank',
-  },
-  {
     text: 'Resume',
     link: 'https://drive.google.com/file/d/1woAZdVHBT9SXY66xCU9rSgBBGfBgJI4L/view?usp=sharing',
     target: '_blank',
