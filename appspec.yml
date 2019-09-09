@@ -6,7 +6,7 @@ files:
 hooks:
   ApplicationStart:
     - location: scripts/start.sh
-      timeout: 10
+      timeout: 120
   ValidateService:
     - location: scripts/validate.sh
       timeout: 5
