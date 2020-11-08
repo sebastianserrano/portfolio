@@ -4,7 +4,7 @@
   "description": "Collection of personal projects",
   "author": "Sebastian Serrano",
   "license": "MIT",
-  "homepage": "https://github.com/sebastianserrano/portfolio",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
