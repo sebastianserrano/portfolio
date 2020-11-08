@@ -13,8 +13,7 @@ function Skills() {
           <Skillset topic="Databases" skills={['PostgreSQL', 'MongoDB', 'Firebase']} />
           <Skillset topic="Frontend" skills={['React JS', 'Redux', 'Bootstrap', 'HTML', 'CSS']} />
           <Skillset topic="Backend" skills={['NodeJS', 'REST API']} />
-          <Skillset topic="Cloud" skills={['Amazon Web Services']} />
-          <Skillset topic="Devops" skills={['AWS Cloudformation', 'AWS CodeDeploy', 'AWS CodePipeline', 'Jenkins']} />
+          <Skillset topic="Cloud" skills={['Amazon Web Services', 'Google Cloud Platform']} />
           <Skillset topic="Tools" skills={['Stripe', 'Twilio', 'Plaid', 'ElasticSearch', 'Git/Github', 'Docker', 'Ansible']} />
         </div>
       </div>
