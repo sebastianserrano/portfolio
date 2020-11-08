@@ -12,7 +12,7 @@ function Profile() {
           <Title text="Contact" />
         </div>
         <div className="col-lg-4 col-md-12 col-sm-12 col-12">
-          <Email text="sebastianjuan1994@gmail.com" />
+          <Email text="ocean.frameworks@gmail.com" />
         </div>
         <div className="col-lg-3 col-md-12 col-sm-12 col-12">
           <Linkedin text="Sebastian Serrano" />
