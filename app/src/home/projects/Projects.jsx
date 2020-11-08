@@ -1,7 +1,7 @@
 import React from 'react';
 import Title from '../components/title/Title';
 import CreateProjects from './project/projectFactory/CreateProjects';
-import projectsJson from './projects.json';
+import projectsJson from './projects-json.json';
 
 function Projects() {
   const projects = CreateProjects(projectsJson);
