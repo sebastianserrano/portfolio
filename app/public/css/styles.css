@@ -10,6 +10,11 @@ p {
 
 a:hover {
   font-size: 1.00rem;
+    color: black;
+}
+
+a {
+    color: black
 }
 
 h4 {
@@ -62,6 +67,12 @@ h4 {
   color: white;
   margin-top: 30px;
   margin-bottom: 30px !important;
+}
+
+#certifications hr {
+    text-decoration: none;
+    border-bottom: 2px solid #de493c;
+    width: 20px;
 }
 
 #skills hr {
@@ -143,12 +154,12 @@ h4 {
 }
 
 #midhub-background-project {
-  background: radial-gradient(circle, rgba(192,196,215,1) 0%, rgba(229,230,231,1) 100%); 
+  background: radial-gradient(circle, rgba(192,196,215,1) 0%, rgba(229,230,231,1) 100%);
 }
 
 #midhub-backend-background-project {
   color: white;
-  background: linear-gradient(0deg, rgba(31,32,33,1) 43%, rgba(109,173,237,1) 100%); 
+  background: linear-gradient(0deg, rgba(31,32,33,1) 43%, rgba(109,173,237,1) 100%);
 }
 
 #cohesive-background-project a {
@@ -158,7 +169,7 @@ h4 {
 
 #solid-nodejs-background-project {
   color: black;
-  background: linear-gradient(0deg, rgba(149,176,180,1) 34%, rgba(138,182,221,1) 78%); 
+  background: linear-gradient(0deg, rgba(149,176,180,1) 34%, rgba(138,182,221,1) 78%);
 }
 
 #lambda-s3-background-project {
@@ -168,12 +179,12 @@ h4 {
 
 #react-s3-background-project {
   color: white;
-  background: linear-gradient(0deg, rgba(118,125,126,1) 40%, rgba(71,112,148,1) 85%); 
+  background: linear-gradient(0deg, rgba(118,125,126,1) 40%, rgba(71,112,148,1) 85%);
 }
 
 #portfolio-background-project {
   color: white;
-  background: linear-gradient(0deg, rgba(66,30,71,1) 11%, rgba(109,173,237,1) 100%); 
+  background: linear-gradient(0deg, rgba(66,30,71,1) 11%, rgba(109,173,237,1) 100%);
 }
 
 #footer p, .svg-inline--fa {
@@ -187,36 +198,87 @@ h4 {
  color: #00b9ff;
 }
 
-@media (max-width: 575.98px) { 
+@media (min-width: 288px) {
+    .certification-margin {
+        margin: 0px 0px 5px 0px;
+    }
+    .certification-link {
+        margin: 10px 0px 10px 0px;
+    }
+}
+
+@media (min-width: 576px) {
+    .certification-margin {
+        margin: 0px 0px 5px 0px;
+    }
+    .certification-link {
+        margin: 10px 0px 10px 0px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .certification-margin {
+        margin: 0px 5px 0px 0px;
+    }
+    .certification-link {
+        margin: 10px 0px 0px 0px;
+    }
+}
+
+@media (min-width: 992px) {
+    .certification-margin {
+        margin: 0px 5px 0px 0px;
+    }
+    .certification-link {
+        margin: 10px 0px 0px 0px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .certification-margin {
+        margin: 0px 5px 0px 0px;
+    }
+    .certification-link {
+        margin: 10px 0px 0px 0px;
+    }
+}
+
+@media (max-width: 575.98px) {
+  .project-image {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+}
+
+@media (max-width: 767.98px) {
   .project-image {
     margin-top: 50px;
     margin-bottom: 30px;
   }
 }
 
-@media (max-width: 767.98px) { 
-  .project-image {
-    margin-top: 50px;
-    margin-bottom: 30px;
-  }
-}
-
-@media (min-width: 575.98px) and (max-width: 767.98px) { 
+@media (min-width: 575.98px) and (max-width: 767.98px) {
   .project-description {
     margin-top: 30px;
   }
 }
 
-@media (max-width: 991.98px) { 
+@media (max-width: 991.98px) {
   .project-image {
     margin-top: 50px;
     margin-bottom: 30px;
   }
 }
 
-@media (max-width: 1199.98px) { 
+@media (max-width: 1199.98px) {
   .project-image {
     margin-top: 50px;
     margin-bottom: 30px;
   }
+}
+
+.certification-image {
+    height: 300px;
 }

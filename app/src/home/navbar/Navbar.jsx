@@ -8,6 +8,11 @@ function Navbar() {
     target: '',
   },
   {
+    text: 'Certifications',
+    link: '#certifications',
+    target: '',
+  },
+  {
     text: 'Github',
     link: 'https://github.com/sebastianserrano',
     target: '_blank',
@@ -15,11 +20,6 @@ function Navbar() {
   {
     text: 'Docker',
     link: 'https://hub.docker.com/u/sebastianserrano',
-    target: '_blank',
-  },
-  {
-    text: 'Resume',
-    link: 'https://drive.google.com/file/d/1woAZdVHBT9SXY66xCU9rSgBBGfBgJI4L/view?usp=sharing',
     target: '_blank',
   },
   {

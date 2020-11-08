@@ -1,0 +1,18 @@
+{
+  "certifications": [
+    {
+      "imageInfo": {
+        "src": "/images/aws-1.png",
+        "alt": "My Image"
+      },
+      "link": "https://www.youracclaim.com/badges/411a6b22-1e24-4382-a67f-afdd2e084816/linked_in_profile"
+    },
+    {
+      "imageInfo": {
+        "src": "/images/gcp-1.png",
+        "alt": "My Image"
+      },
+      "link": "https://www.credential.net/35e77aec-f56e-45a2-b0b4-500cc5419b32?key=d9cd218d0854b7432a7b5ecf37a5b04ab68878d2435a9f87ed787ebc5562a905"
+    }
+  ]
+}
