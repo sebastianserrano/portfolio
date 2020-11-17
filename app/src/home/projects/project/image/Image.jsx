@@ -7,9 +7,12 @@ function Image(props) {
   return (
     <div className="col-lg-5 col-md-5 col-sm-6 col-12">
       <div className="thumbnail-project-image">
-        <a href={link}>
-          <img className="project-image" src={name} alt={alt} />
-        </a>
+        {alt === "midhub" ?
+          <img className="project-image" src={name} alt={alt} /> :
+          <a href={link}>
+            <img className="project-image" src={name} alt={alt} />
+          </a>
+        }
       </div>
     </div>
   );
