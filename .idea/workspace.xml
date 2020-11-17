@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7fa36e6-6691-42ea-a052-7ff96f5deb68" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/images/aws-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/images/gcp-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/home/certifications/Certifications.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/home/certifications/certification/Certification.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/home/certifications/certifications-json.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/portfolio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/portfolio.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/home/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/home/navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/home/navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/home/projects/project/image/Image.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/home/projects/project/image/Image.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/home/projects/projects-json.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/home/projects/projects-json.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/home/skills/Skills.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/home/skills/Skills.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +59,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604783327500</updated>
-      <workItem from="1604783329122" duration="12084000" />
+      <workItem from="1604783329122" duration="15144000" />
+      <workItem from="1605572793389" duration="579000" />
     </task>
     <servers />
   </component>
