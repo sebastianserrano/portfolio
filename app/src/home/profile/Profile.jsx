@@ -12,7 +12,7 @@ function Profile() {
               <Title text="Fullstack Web Developer" />
             </div>
             <Description text="Avionics Engineer and Full Stack Web Developer with a passion for programming and world changing ideas
-                               with 3 years of experience in software development
+                               with 5 years of experience in software development
                                ranging from IOS mobile apps to cutting edge websites built with many
                                different capabilities. Proven ability to learn a wide spectrum of essential
                                technologies to bring ideas to life at scale. Experienced with e-commerce and integration apps
